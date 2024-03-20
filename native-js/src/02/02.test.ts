@@ -51,17 +51,17 @@ beforeEach(() => {
 });
 
 test("test city should contains hospital and fire station", () => {
-  expect(govermentBuildings.length).toBe(2);
+  expect(city.govermentBuildings.length).toBe(2);
 
-  expect(govermentBuildings[0].type).toBe("HOSPITAL");
-  expect(govermentBuildings[0].budget).toBe(200000);
-  expect(govermentBuildings[0].staffCount).toBe(200);
-  expect(govermentBuildings[0].address.street.title).toBe("Central Str");
+  expect(city.govermentBuildings[0].type).toBe("HOSPITAL");
+  expect(city.govermentBuildings[0].budget).toBe(200000);
+  expect(city.govermentBuildings[0].staffCount).toBe(200);
+  expect(city.govermentBuildings[0].address.street.title).toBe("Central Str");
 
-  expect(govermentBuildings[1].buildedAt).toBe("FIRE-STATION");
-  expect(govermentBuildings[1].repaired).toBe(500000);
-  expect(govermentBuildings[1].address.number).toBe(1000);
-  expect(govermentBuildings[1].address.street.title).toBe("South Str");
+  expect(city.govermentBuildings[1].type).toBe("FIRE-STATION");
+  expect(city.govermentBuildings[1].budget).toBe(500000);
+  expect(city.govermentBuildings[1].staffCount).toBe(1000);
+  expect(city.govermentBuildings[1].address.street.title).toBe("South Str");
 });
 
 test("test city should contains 3 houses", () => {
