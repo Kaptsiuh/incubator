@@ -13,7 +13,7 @@ type AddressType = {
   city: LocalCityType;
 };
 
-type StudentType = {
+export type StudentType = {
   id: number;
   name: string;
   "my name": string;
@@ -23,7 +23,7 @@ type StudentType = {
   technologies: Array<TechnologiesType>;
 };
 
-const student: StudentType = {
+export const student: StudentType = {
   id: 1,
   name: "Dima",
   "my name": "Byll",
